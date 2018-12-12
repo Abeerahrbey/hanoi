@@ -5,3 +5,5 @@
    syscall #printing string
    li $v0,5
    syscall #reading integer
+   move $s0,$v0 #shift input to s0
+   li $t1,1
