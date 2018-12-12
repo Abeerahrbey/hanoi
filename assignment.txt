@@ -7,3 +7,8 @@
    syscall #reading integer
    move $s0,$v0 #shift input to s0
    li $t1,1
+   hanoi:
+   beqz $s0,output
+   addi $s0,$s0,-1 #counter for power
+   mul $t1,$t1,2
+   j hanoi
